@@ -19,14 +19,14 @@ body {
 
 body > header {
   grid-area: head;
-  background-color: #8ca0ff;
+  background-color: #FFFFFF;
 }
 
 body > nav {
   row-gap: 150px;
   grid-area: nav;
   grid-column: 1;
-  background-color: #ffa08c;
+  background-color: #1992d4;
 }
 
 body > main {
@@ -35,7 +35,7 @@ body > main {
 }
 
 .dashboard_svg {
-  width: 94px;
+  width: 48px;
 }
 
 .notdashboard_svg {
@@ -44,10 +44,21 @@ body > main {
 
 .ulbigbro {
   display: grid;
-  row-gap: 80px;
+  padding: 15px;
+  row-gap: 40px;
+  column-gap: 15px;
 }
 
 .ul_littlebro {
   display: flex;
-  column-gap: 15px;
+  align-items: center;
+  padding-left: 5%;
+  padding-bottom: 15px;
+  /* row-gap: 10px; */
+  column-gap: 25px;
+}
+
+.ul_littlebro > h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
