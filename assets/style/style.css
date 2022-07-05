@@ -5,6 +5,7 @@
   overflow: hidden;
 }
 
+/* Layout */
 body {
   display: grid;
   width: 100%;
@@ -14,26 +15,49 @@ body {
   grid-template-areas:
     "nav head head head head"
     "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
+    "nav  main main main main"
     "nav  main main main main";
 }
 
 body > header {
+  display: grid;
   grid-area: head;
-  background-color: #FFFFFF;
+  box-shadow: 3px 0px 5px 2px grey;
+  background-color: #ffffff;
 }
 
 body > nav {
   row-gap: 150px;
   grid-area: nav;
-  grid-column: 1;
   background-color: #1992d4;
 }
 
 body > main {
   grid-area: main;
-  background-color: #ffff64;
 }
 
+/* Header */
 .dashboard_svg {
   width: 48px;
 }
@@ -60,5 +84,101 @@ body > main {
 
 .ul_littlebro > h2 {
   color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header */
+header {
+  display: grid;
+  background-color: green;
+  grid-area: head;
+}
+
+/* Header top header */
+/* Header searchbar */
+
+.topH,
+.bottomH {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.searchbar,
+.welcome,
+.features,
+.notifs {
+  padding: 15px;
+}
+
+.searchbar {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+}
+
+.inputpls {
+  width: 100%;
+  border: none;
+  background-color: #e2e8f0;
+  border-radius: 30px;
+  height: 30px;
+}
+
+.inputpls:focus {
+  outline: none;
+}
+
+.search_svg {
+  width: 48px;
+}
+
+.notifs {
+  display: grid;
+  justify-content: end;
+  column-gap: 20px;
+  grid-template-columns: 0.1fr 0.1fr 0.4fr;
+}
+
+.notifs > h2,
+.welcome > p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.pfp_twitter {
+  width: 60px;
+  border-radius: 30px;
+}
+
+/* Header bottom header */
+/* Header welcome */
+
+.welcome {
+  display: grid;
+  align-items: start;
+  column-gap: 5%;
+  grid-template-columns: 0.1fr 1fr;
+}
+
+.welcome > p > small {
+  font-size: 1.4rem;
+}
+.shamelesspub {
+  font-size: 2rem;
+}
+
+/* Buttons */
+.features {
+  display: grid;
+  row-gap: 100px;
+  justify-content: center;
+  grid-template-columns: repeat(3, 150px);
+}
+
+.btn-header {
+  width: 120px;
+  border-radius: 30px;
+  height: 56px;
+  background-color: #1992d4;
+  color: #ffffff;
+  border: 1px transparent;
   font-family: "Montserrat", sans-serif;
 }
