@@ -13,31 +13,31 @@ body {
   max-height: 100vh;
   max-width: 100%;
   grid-template-areas:
-    "nav head head head head"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main"
-    "nav  main main main main";
+    "nav nav nav nav head head head head"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main"
+    "nav nav nav nav  main main main main";
 }
 
 body > header {
@@ -212,12 +212,13 @@ header {
   border-radius: 5px;
   box-shadow: 0 0 0 0;
   border: none;
-  box-shadow: inset 7px 0px 0 0px #EFAF1B;
+  box-shadow: inset 7px 0px 0 0px #efaf1b;
   padding: 20px;
   padding-bottom: 25px;
   background-color: #ffffff;
 }
-.project-section > .wrap_txt-project > h2 {
+.project-section > .wrap_txt-project > h2,
+.annoucement > h2 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -228,10 +229,32 @@ header {
   justify-self: end;
 }
 
-.project-section > .wrap_txt-project > p {
+.project-section > .wrap_txt-project > p,
+.annoucement > h2 {
   font-family: "Barlow Condensed", sans-serif;
 }
 
 .icons_main {
   width: 48px;
 }
+
+/* Annoucements section */
+.announcements {
+  display: grid;
+  row-gap: 50px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 45px;
+  margin-top: 5%;
+  margin-bottom: 40%;
+}
+
+.annoucement {
+  border-bottom: 1px solid black;
+}
+.annoucement > p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Trending */
