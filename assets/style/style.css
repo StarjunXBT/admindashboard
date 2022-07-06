@@ -54,7 +54,10 @@ body > nav {
 }
 
 body > main {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
   grid-area: main;
+  background-color: #e2e8f0;
 }
 
 /* Header */
@@ -181,4 +184,54 @@ header {
   color: #ffffff;
   border: 1px transparent;
   font-family: "Montserrat", sans-serif;
+}
+
+/* Main section */
+
+/* Main projects */
+
+.main-title {
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 2%;
+}
+
+.project,
+.news {
+  padding: 30px;
+}
+
+.box-container {
+  display: grid;
+  column-gap: 100px;
+  row-gap: 50px;
+  grid-template-columns: repeat(2, 0.5fr);
+}
+
+.project-section {
+  display: grid;
+  border-radius: 5px;
+  box-shadow: 0 0 0 0;
+  border: none;
+  box-shadow: inset 7px 0px 0 0px #EFAF1B;
+  padding: 20px;
+  padding-bottom: 25px;
+  background-color: #ffffff;
+}
+.project-section > .wrap_txt-project > h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrap_txt-project {
+  padding-bottom: 5%;
+}
+.wrap_ico {
+  justify-self: end;
+}
+
+.project-section > .wrap_txt-project > p {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.icons_main {
+  width: 48px;
 }
