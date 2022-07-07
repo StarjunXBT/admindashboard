@@ -48,7 +48,6 @@ body > header {
 }
 
 body > nav {
-  row-gap: 150px;
   grid-area: nav;
   background-color: #1992d4;
 }
@@ -88,6 +87,7 @@ body > main {
 .ul_littlebro > h2 {
   color: white;
   font-family: "Montserrat", sans-serif;
+  overflow: visible;
 }
 
 /* Header */
@@ -246,7 +246,7 @@ header {
   border-radius: 5px;
   padding: 45px;
   margin-top: 5%;
-  margin-bottom: 40%;
+  margin-bottom: 5%;
 }
 
 .annoucement {
@@ -258,3 +258,19 @@ header {
 }
 
 /* Trending */
+
+.trending {
+  border-radius: 5px;
+  background-color: white;
+}
+
+.user {
+  display: grid;
+  padding: 15px;
+  justify-content: space-around;
+  grid-template-columns: 0.2fr 0.7fr;
+}
+
+.user__text > * {
+  font-family: "Montserrat", sans-serif;
+}
